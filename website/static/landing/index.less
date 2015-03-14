@@ -1,0 +1,105 @@
+@import "colors";
+@import "profile";
+
+
+@navbar-height: 100px;
+@box-inset: 30px;
+@row-height: 300px;
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+
+  color: @cosy-blue;
+
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42857143;
+  background-color: white;
+}
+
+.navbar-collapse{
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+a:visited{
+  text-decoration: none;
+  outline: none;
+}
+
+.icon-bar{
+  background-color: @cosy-orange;
+}
+
+.navbar{
+  height: @navbar-height;
+  background-color: white;
+}
+
+.navbar-brand{
+  width: 250px;
+
+  .img{
+    width: 100%;
+  }
+}
+
+.navbar-text{
+  color: @cosy-orange;
+  font-size: 20px;
+  font-weight: 500;
+  .underline(@cosy-orange);
+}
+
+.hero{
+  background-color: @cosy-grey-lt;
+  margin-top: @navbar-height;
+
+
+  #hero{
+    background: url("../img/hero1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.border-box{
+  height: @row-height;
+  border: solid @cosy-orange;
+  margin: @box-inset @box-inset/2;
+}
+
+.article-preview{
+  height: @row-height;
+  margin: 10px 0px;
+  border-top: solid 3px fade(@cosy-orange, 30%);
+  border-bottom: solid 3px fade(@cosy-orange, 30%);
+}
+
+p > em{
+  font-weight: 500;
+}
+
+h2{
+  color: @cosy-blue;
+  font-weight: 400;
+}
+
+.img-box{
+  background-color: #0000FF;
+  width: 100px;
+  height: 100px;
+  clip-path: inset(10px 20px 50px 10px);
+}
+
+.img-small {
+  position: absolute;
+  clip-path: inset(10px 20px 90px 40px);
+}

@@ -1,0 +1,83 @@
+{% extends "__base.html" %}
+{% load staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    {% comment %}TODO: Put typekit font script here{% endcomment %}
+{% endblock %}
+
+{% block wrapper %}
+
+
+    <div class="hero">
+        <div class="container">
+            <div class="row" id="hero">
+                <div class="col-sm-12">
+                    <div class="border-box"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="article-preview">
+                        <h2>Tech for culture</h2>
+                        <p>We revolutionize the way you use your mobile phones by socially
+                            integrating rewards in the physical world whilst creating new means of
+                            communications for businesses. <br/><br/><em>Everybody wins.</em></p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="article-preview">
+                        <h2>Cosytech & Startup Norway launches successful Startup weekend in Oslo</h2>
+                        <div class="img-box">
+                            <img class="img-responsive img-small" src="{% static "img/stereo.svg" %}" alt="Stereo"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="article-preview"></div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    {% comment %}
+    <div class="content-section-a" id="first-section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Collect YP and <br/>and get rewards</h2>
+                    <p class="lead">Get customers involved with your brand by utilizing proximity technology for context aware information. The future is here.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive hidden-xs" id="firstImage" src="{% static "img/trickle.png" %}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-a -->
+{% endcomment %}
+
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+{% endblock %}
