@@ -22,3 +22,22 @@
 .border-frame-lg{
     border: solid 15px @cosy-orange;
 }
+
+.fade (@color){
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+   .fade:hover {
+     opacity: 0.5;
+     color: @color;
+      }
+}
+
+
+.cosy-box(@color){
+  height: @row-height;
+  border: solid @color;
+  margin: @box-inset @box-inset/2;
+}

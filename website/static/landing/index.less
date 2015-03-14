@@ -24,10 +24,20 @@ body {
   background-color: white;
 }
 
-.navbar-collapse{
-  background-color: white;
-  margin-top: 40px;
-  margin-bottom: 20px;
+@media (max-width: 780px){
+  .navbar-collapse {
+    text-align: center;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    -webkit-box-shadow: 0px 13px 0px 0px rgba(163,163,163,0.64);
+    -moz-box-shadow: 0px 13px 0px 0px rgba(163,163,163,0.64);
+    box-shadow: 0px 13px 0px 0px rgba(163,163,163,0.64);
+  }
+  .navbar-brand{
+    width: 300px;
+  }
 }
 
 a:visited{
@@ -42,6 +52,7 @@ a:visited{
 .navbar{
   height: @navbar-height;
   background-color: white;
+
 }
 
 .navbar-brand{
@@ -60,7 +71,6 @@ a:visited{
 }
 
 .hero{
-  background-color: @cosy-grey-lt;
   margin-top: @navbar-height;
 
 
@@ -70,10 +80,8 @@ a:visited{
   }
 }
 
-.border-box{
-  height: @row-height;
-  border: solid @cosy-orange;
-  margin: @box-inset @box-inset/2;
+#border-box{
+ .cosy-box(@cosy-orange);
 }
 
 .article-preview{
@@ -83,8 +91,28 @@ a:visited{
   border-bottom: solid 3px fade(@cosy-orange, 30%);
 }
 
+.article-preview > p{
+  font-size: 2vmin;
+}
+
+
+@media (max-width: 780px) {
+  .article-preview > p {
+    font-size: 2vmax;
+  }
+    .article-preview > h2{
+      font-size: 4vmax;
+    }
+
+    img{
+      width: 50%;
+      margin: 0 auto;
+    }
+}
+
 p > em{
   font-weight: 500;
+  font-size: 20px;
 }
 
 h2{
@@ -92,14 +120,78 @@ h2{
   font-weight: 400;
 }
 
-.img-box{
-  background-color: #0000FF;
-  width: 100px;
-  height: 100px;
-  clip-path: inset(10px 20px 50px 10px);
+.pull-down{
+  position:absolute;
+  bottom: 0;
+  margin-bottom: 20px;
 }
 
 .img-small {
   position: absolute;
-  clip-path: inset(10px 20px 90px 40px);
+}
+
+.img-box{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.read-more{
+  position: absolute;
+  right: 0;
+  padding-right: 30px;
+  color: @cosy-orange;
+  font-weight: 600;
+  font-size: 16px;
+
+  :hover{
+    text-decoration: none;
+  }
+}
+
+.quote-section{
+  color: white;
+  background-color: @cosy-orange;
+
+  h1{
+    margin-left: 60px;
+    margin-right: 60px;
+
+    margin-top: 40px;
+    font-size: 4vmin;
+    font-weight: 600;
+    font-style: italic;
+
+  }
+  .author{
+
+    color: white;
+    text-align: right;
+    right: 0;
+    margin-right: 60px;
+    margin-bottom: 60px;
+
+    h2{
+      font-size: 20px;
+      color: inherit;
+      font-weight: 500;
+
+
+      small{
+        color: inherit;
+      }
+    }
+  }
+}
+
+#quote-box{
+  .cosy-box(@white);
+}
+
+.sectionA{
+    margin-top: 30px;
+}
+
+.sectionA img{
+  height: 200px;
+  margin: 0 auto;
 }

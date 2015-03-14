@@ -19,10 +19,19 @@ body {
   line-height: 1.42857143;
   background-color: white;
 }
-.navbar-collapse {
-  background-color: white;
-  margin-top: 40px;
-  margin-bottom: 20px;
+@media (max-width: 780px) {
+  .navbar-collapse {
+    text-align: center;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 13px 0px 0px rgba(163, 163, 163, 0.64);
+    -moz-box-shadow: 0px 13px 0px 0px rgba(163, 163, 163, 0.64);
+    box-shadow: 0px 13px 0px 0px rgba(163, 163, 163, 0.64);
+  }
+  .navbar-brand {
+    width: 300px;
+  }
 }
 a:visited {
   text-decoration: none;
@@ -48,14 +57,13 @@ a:visited {
   border-bottom: solid 2px #f16949;
 }
 .hero {
-  background-color: #ecedef;
   margin-top: 100px;
 }
 .hero #hero {
   background: url("../img/hero1.jpg") no-repeat center center;
   background-size: cover;
 }
-.border-box {
+#border-box {
   height: 300px;
   border: solid #f16949;
   margin: 30px 15px;
@@ -66,20 +74,88 @@ a:visited {
   border-top: solid 3px rgba(241, 105, 73, 0.3);
   border-bottom: solid 3px rgba(241, 105, 73, 0.3);
 }
+.article-preview > p {
+  font-size: 2vmin;
+}
+@media (max-width: 780px) {
+  .article-preview > p {
+    font-size: 2vmax;
+  }
+  .article-preview > h2 {
+    font-size: 4vmax;
+  }
+  img {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 p > em {
   font-weight: 500;
+  font-size: 20px;
 }
 h2 {
   color: #399fbd;
   font-weight: 400;
 }
-.img-box {
-  background-color: #0000FF;
-  width: 100px;
-  height: 100px;
-  clip-path: inset(10px 20px 50px 10px);
+.pull-down {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
 }
 .img-small {
   position: absolute;
-  clip-path: inset(10px 20px 90px 40px);
+}
+.img-box {
+  width: 90%;
+  margin: 0 auto;
+}
+.read-more {
+  position: absolute;
+  right: 0;
+  padding-right: 30px;
+  color: #f16949;
+  font-weight: 600;
+  font-size: 16px;
+}
+.read-more :hover {
+  text-decoration: none;
+}
+.quote-section {
+  color: white;
+  background-color: #f16949;
+}
+.quote-section h1 {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+  font-size: 4vmin;
+  font-weight: 600;
+  font-style: italic;
+}
+.quote-section .author {
+  color: white;
+  text-align: right;
+  right: 0;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+.quote-section .author h2 {
+  font-size: 20px;
+  color: inherit;
+  font-weight: 500;
+}
+.quote-section .author h2 small {
+  color: inherit;
+}
+#quote-box {
+  height: 300px;
+  border: solid #ffffff;
+  margin: 30px 15px;
+}
+.sectionA {
+  margin-top: 30px;
+}
+.sectionA img {
+  height: 200px;
+  margin: 0 auto;
 }
