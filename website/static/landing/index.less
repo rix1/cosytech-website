@@ -1,10 +1,10 @@
 @import "colors";
 @import "profile";
 
-
 @navbar-height: 100px;
 @box-inset: 30px;
 @row-height: 300px;
+@row-height-sm: 230px;
 
 body, html {
   width: 100%;
@@ -28,8 +28,10 @@ body {
   .navbar-collapse {
     text-align: center;
     background-color: white;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
+
+    border-top: solid 3px fade(@cosy-grey, 30%);
 
     -webkit-box-shadow: 0px 13px 0px 0px rgba(163,163,163,0.64);
     -moz-box-shadow: 0px 13px 0px 0px rgba(163,163,163,0.64);
@@ -52,7 +54,9 @@ a:visited{
 .navbar{
   height: @navbar-height;
   background-color: white;
+}
 
+.navbar .container{
 }
 
 .navbar-brand{
@@ -64,9 +68,8 @@ a:visited{
 }
 
 .navbar-text{
+  .text-medium;
   color: @cosy-orange;
-  font-size: 20px;
-  font-weight: 500;
   .underline(@cosy-orange);
 }
 
@@ -84,20 +87,27 @@ a:visited{
  .cosy-box(@cosy-orange);
 }
 
-.article-preview{
+.article{
   height: @row-height;
+}
+
+.article-preview{
   margin: 10px 0px;
   border-top: solid 3px fade(@cosy-orange, 30%);
   border-bottom: solid 3px fade(@cosy-orange, 30%);
 }
 
-.article-preview > p{
+.article a{
+  text-decoration: none;
+}
+
+.article p{
   font-size: 2vmin;
 }
 
 
 @media (max-width: 780px) {
-  .article-preview > p {
+  .article p {
     font-size: 2vmax;
   }
     .article-preview > h2{
@@ -131,8 +141,9 @@ h2{
 }
 
 .img-box{
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
+
 }
 
 .read-more{
@@ -183,6 +194,15 @@ h2{
   }
 }
 
+.container{
+  padding-top: 15px;
+}
+
+.section{
+  border-top: solid 3px fade(@cosy-orange, 30%);
+  border-bottom: solid 3px fade(@cosy-orange, 30%);
+}
+
 #quote-box{
   .cosy-box(@white);
 }
@@ -191,7 +211,50 @@ h2{
     margin-top: 30px;
 }
 
-.sectionA img{
-  height: 200px;
+.article-full-width{
+}
+
+.article-full-width img{
+  width: 200px;
+  padding-top: 50px;
   margin: 0 auto;
 }
+
+video{
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .buzzword {
+    display: none !important;
+  }
+}
+
+.buzzword{
+  .text-medium;
+  color: @cosy-blue;
+  text-align: center;
+  height: @row-height-sm;
+
+  img{
+    width: 60%;
+    padding-top: 10%;
+  }
+
+  p{
+    padding-top: 10px;
+  }
+}
+
+
+footer {
+  height: 400px;
+
+  .section{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  margin-bottom: 150px;
+}
+
+

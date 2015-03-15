@@ -4,6 +4,18 @@
 .border-frame-lg {
   border: solid 15px #f16949;
 }
+.text-medium {
+  font-weight: 500;
+}
+.text-normal {
+  font-weight: 400;
+}
+.blue {
+  color: #399fbd;
+}
+.orange {
+  color: #f16949;
+}
 body,
 html {
   width: 100%;
@@ -23,8 +35,9 @@ body {
   .navbar-collapse {
     text-align: center;
     background-color: white;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    border-top: solid 3px rgba(219, 220, 222, 0.3);
     -webkit-box-shadow: 0px 13px 0px 0px rgba(163, 163, 163, 0.64);
     -moz-box-shadow: 0px 13px 0px 0px rgba(163, 163, 163, 0.64);
     box-shadow: 0px 13px 0px 0px rgba(163, 163, 163, 0.64);
@@ -51,9 +64,8 @@ a:visited {
   width: 100%;
 }
 .navbar-text {
-  color: #f16949;
-  font-size: 20px;
   font-weight: 500;
+  color: #f16949;
   border-bottom: solid 2px #f16949;
 }
 .hero {
@@ -68,17 +80,22 @@ a:visited {
   border: solid #f16949;
   margin: 30px 15px;
 }
-.article-preview {
+.article {
   height: 300px;
+}
+.article-preview {
   margin: 10px 0px;
   border-top: solid 3px rgba(241, 105, 73, 0.3);
   border-bottom: solid 3px rgba(241, 105, 73, 0.3);
 }
-.article-preview > p {
+.article a {
+  text-decoration: none;
+}
+.article p {
   font-size: 2vmin;
 }
 @media (max-width: 780px) {
-  .article-preview > p {
+  .article p {
     font-size: 2vmax;
   }
   .article-preview > h2 {
@@ -106,7 +123,7 @@ h2 {
   position: absolute;
 }
 .img-box {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .read-more {
@@ -147,6 +164,13 @@ h2 {
 .quote-section .author h2 small {
   color: inherit;
 }
+.container {
+  padding-top: 15px;
+}
+.section {
+  border-top: solid 3px rgba(241, 105, 73, 0.3);
+  border-bottom: solid 3px rgba(241, 105, 73, 0.3);
+}
 #quote-box {
   height: 300px;
   border: solid #ffffff;
@@ -155,7 +179,37 @@ h2 {
 .sectionA {
   margin-top: 30px;
 }
-.sectionA img {
-  height: 200px;
+.article-full-width img {
+  width: 200px;
+  padding-top: 50px;
   margin: 0 auto;
+}
+video {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .buzzword {
+    display: none !important;
+  }
+}
+.buzzword {
+  font-weight: 500;
+  color: #399fbd;
+  text-align: center;
+  height: 230px;
+}
+.buzzword img {
+  width: 60%;
+  padding-top: 10%;
+}
+.buzzword p {
+  padding-top: 10px;
+}
+footer {
+  height: 400px;
+  margin-bottom: 150px;
+}
+footer .section {
+  padding-top: 40px;
+  padding-bottom: 60px;
 }

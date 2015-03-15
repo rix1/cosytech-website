@@ -12,7 +12,7 @@
 }
 
 .underline-lg(@color){
-    border-bottom: solid 5px @color;
+  border-bottom: solid 5px @color;
 }
 
 .border-frame {
@@ -20,24 +20,39 @@
 }
 
 .border-frame-lg{
-    border: solid 15px @cosy-orange;
+  border: solid 15px @cosy-orange;
 }
 
 .fade (@color){
-   opacity: 1;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 
-   .fade:hover {
-     opacity: 0.5;
-     color: @color;
-      }
+  .fade:hover {
+    opacity: 0.5;
+    color: @color;
+  }
 }
 
+.text-medium{
+  font-weight: 500;
+}
+
+.text-normal{
+  font-weight: 400;
+}
 
 .cosy-box(@color){
   height: @row-height;
   border: solid @color;
   margin: @box-inset @box-inset/2;
+}
+
+.blue{
+  color: @cosy-blue;
+}
+
+.orange{
+  color: @cosy-orange;
 }
