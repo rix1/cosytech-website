@@ -1,0 +1,24 @@
+{
+  "name": "cosytech-website",
+  "version": "1.0.0",
+  "description": "1. Create virtual env in cosytech-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./ -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rix1/cosytech-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rix1/cosytech-website/issues"
+  },
+  "homepage": "https://github.com/rix1/cosytech-website#readme",
+  "dependencies": {
+    "http-server": "^0.8.5"
+  }
+}

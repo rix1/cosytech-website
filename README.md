@@ -1,3 +1,4 @@
 ## Cosytech Website
 
-1. Create virtual env in cosytech-website
+1. Install dependencies with `npm install` and `bower install`.
+2. Run server locally with `npm start`
