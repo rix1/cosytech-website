@@ -1,11 +1,15 @@
-@import "colors";
-
 
 // Fonts
 // Imported in header.
 
 
 //Borders:
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
 
 .underline(@color){
   border-bottom: solid 2px @color;
